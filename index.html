@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik+Broken+Fax&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="header">
+        <img class="menu" src="./Assets/menu.svg" alt="menu" />
+        <img class="logo" src="./Assets/logo 1.svg" alt="logo" />
+        <img class="nums" src="./Assets/num.svg" alt="number" />
+      </nav>
+      <div class="hero">
+        <img class="hero-image" src="./Assets/hero.png" alt="hero-image" />
+        <div class="hero-text-and-button">
+          <h1>«ПЕСТОВСКИЙ ЛЕСОКОМБИНАТ»</h1>
+          <p>Cтань частью нашей команды!</p>
+          <button class="send-form-button" onclick="openModal()">
+            <p>ОТПРАВИТЬ АНКЕТУ</p>
+          </button>
+        </div>
+      </div>
+      <div class="about-company-block">
+        <h2>О КОМПАНИИ</h2>
+        <div class="description-block">
+          <div class="number-block"><p>2</p></div>
+          <p>Города присутствия: Санкт-Петербург и Москва</p>
+          <div class="number-block"><p>>30</p></div>
+          <p>Лет среди лидеров рынка</p>
+          <div class="number-block"><p>100</p></div>
+          <p>Домов и бань сдаём ежегодно</p>
+        </div>
+      </div>
+      <div class="selection-of-vacancies">
+        <h3>ВЫБЕРИ ПОДРАЗДЕЛЕНИЕ:</h3>
+        <div class="vacancies-block">
+          <div class="one-vacancy"><p>cтроительный отдел</p></div>
+          <div class="one-vacancy"><p>офис</p></div>
+          <div class="one-vacancy"><p>финансовый отдел</p></div>
+          <div class="one-vacancy"><p>отдел продаж</p></div>
+          <div class="one-vacancy"><p>внештатный сотрудник</p></div>
+        </div>
+        <div class="view-vacancies-block">
+          <div class="view-one-vacancy">
+            <div class="icon-block">
+              <img src="./Assets/vacancy.svg" alt="vacancy" />
+              <p>Прораб</p>
+            </div>
+            <div class="more-block">
+              <img
+                src="./Assets/more.svg"
+                alt="more"
+                class="toggle-more-info rotate"
+              />
+            </div>
+            <div class="price-block">
+              <img src="./Assets/price.svg" alt="price" />
+              <p>от 00 000 руб</p>
+            </div>
+            <div class="more-info">
+              <p class="more-info-p">Задачи:</p>
+              <ul>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+              </ul>
+              <p class="more-info-p">Наши ожидания:</p>
+              <ul>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+              </ul>
+              <p class="more-info-p">Мы предлагаем:</p>
+              <ul>
+                <li><p>график 5/2 с гибким началом рабочего дня;</p></li>
+                <li>
+                  <p>
+                    оформление по ТК РФ с первого рабочего дня, полностью белую
+                    заработную плату;
+                  </p>
+                </li>
+                <li><p>ежеквартальную премию по итогам работы;</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="view-one-vacancy">
+            <div class="icon-block">
+              <img src="./Assets/vacancy.svg" alt="vacancy" />
+              <p>Специалист службы снабжения</p>
+            </div>
+            <div class="more-block">
+              <img
+                src="./Assets/more.svg"
+                alt="more"
+                class="toggle-more-info rotate"
+              />
+            </div>
+            <div class="price-block">
+              <img src="./Assets/price.svg" alt="price" />
+              <p>от 00 000 руб</p>
+            </div>
+            <div class="more-info">
+              <p class="more-info-p">Задачи:</p>
+              <ul>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+              </ul>
+              <p class="more-info-p">Наши ожидания:</p>
+              <ul>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+              </ul>
+              <p class="more-info-p">Мы предлагаем:</p>
+              <ul>
+                <li><p>график 5/2 с гибким началом рабочего дня;</p></li>
+                <li>
+                  <p>
+                    оформление по ТК РФ с первого рабочего дня, полностью белую
+                    заработную плату;
+                  </p>
+                </li>
+                <li><p>ежеквартальную премию по итогам работы;</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="view-one-vacancy">
+            <div class="icon-block">
+              <img src="./Assets/vacancy.svg" alt="vacancy" />
+              <p>Логист</p>
+            </div>
+            <div class="more-block">
+              <img
+                src="./Assets/more.svg"
+                alt="more"
+                class="toggle-more-info rotate"
+              />
+            </div>
+            <div class="price-block">
+              <img src="./Assets/price.svg" alt="price" />
+              <p>Обсуждается на собеседовании</p>
+            </div>
+            <div class="more-info">
+              <p class="more-info-p">Задачи:</p>
+              <ul>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+              </ul>
+              <p class="more-info-p">Наши ожидания:</p>
+              <ul>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+              </ul>
+              <p class="more-info-p">Мы предлагаем:</p>
+              <ul>
+                <li><p>график 5/2 с гибким началом рабочего дня;</p></li>
+                <li>
+                  <p>
+                    оформление по ТК РФ с первого рабочего дня, полностью белую
+                    заработную плату;
+                  </p>
+                </li>
+                <li><p>ежеквартальную премию по итогам работы;</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="view-one-vacancy">
+            <div class="icon-block">
+              <img src="./Assets/vacancy.svg" alt="vacancy" />
+              <p>Проектировщик</p>
+            </div>
+            <div class="more-block">
+              <img
+                src="./Assets/more.svg"
+                alt="more"
+                class="toggle-more-info rotate"
+              />
+            </div>
+            <div class="price-block">
+              <img src="./Assets/price.svg" alt="price" />
+              <p>от 00 000 руб</p>
+            </div>
+            <div class="more-info">
+              <p class="more-info-p">Задачи:</p>
+              <ul>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+              </ul>
+              <p class="more-info-p">Наши ожидания:</p>
+              <ul>
+                <li><p>Описание</p></li>
+                <li><p>Описание</p></li>
+              </ul>
+              <p class="more-info-p">Мы предлагаем:</p>
+              <ul>
+                <li><p>график 5/2 с гибким началом рабочего дня;</p></li>
+                <li>
+                  <p>
+                    оформление по ТК РФ с первого рабочего дня, полностью белую
+                    заработную плату;
+                  </p>
+                </li>
+                <li><p>ежеквартальную премию по итогам работы;</p></li>
+              </ul>
+            </div>
+          </div>
+          <button style="margin-bottom: 50px" class="send-form-button">
+            <p>ОТКЛИКНУТЬСЯ НА ВАКАНСИЮ</p>
+          </button>
+        </div>
+      </div>
+      <div class="company-advantages-block">
+        <h3>ПРЕИМУЩЕСТВА КОМПАНИИ</h3>
+        <div class="advantages-block">
+          <div class="advantage-block">
+            <div class="advantage-visible">
+              <p>Качество продукта</p>
+              <img
+                src="./Assets/more.svg"
+                alt="more"
+                class="toggle-more-info rotate"
+              />
+            </div>
+            <div class="advantage-description">
+              <p>
+                Мы гордимся результатами своей работы! Мы убеждены, что именно
+                качество — это самое главное, это то, что даёт Нам уверенность в
+                завтрашнем дне.
+              </p>
+            </div>
+          </div>
+          <div class="advantage-block">
+            <div class="advantage-visible">
+              <p>Популярность бренда в сети</p>
+              <img
+                src="./Assets/more.svg"
+                alt="more"
+                class="toggle-more-info rotate"
+              />
+            </div>
+            <div class="advantage-description">
+              <p>
+                Мы гордимся результатами своей работы! Мы убеждены, что именно
+                качество — это самое главное, это то, что даёт Нам уверенность в
+                завтрашнем дне.
+              </p>
+            </div>
+          </div>
+          <div class="advantage-block">
+            <div class="advantage-visible">
+              <p>Передовое рабочее место</p>
+              <img
+                src="./Assets/more.svg"
+                alt="more"
+                class="toggle-more-info rotate"
+              />
+            </div>
+            <div class="advantage-description">
+              <p>
+                Мы гордимся результатами своей работы! Мы убеждены, что именно
+                качество — это самое главное, это то, что даёт Нам уверенность в
+                завтрашнем дне.
+              </p>
+            </div>
+          </div>
+          <div class="advantage-block">
+            <div class="advantage-visible">
+              <p>Свои автоматизированные системы обучения</p>
+              <img
+                src="./Assets/more.svg"
+                alt="more"
+                class="toggle-more-info rotate"
+              />
+            </div>
+            <div class="advantage-description">
+              <p>
+                Мы гордимся результатами своей работы! Мы убеждены, что именно
+                качество — это самое главное, это то, что даёт Нам уверенность в
+                завтрашнем дне.
+              </p>
+            </div>
+          </div>
+          <div class="advantage-block">
+            <div class="advantage-visible">
+              <p>Сотрудничество с ведущими компаниями рынка</p>
+              <img
+                src="./Assets/more.svg"
+                alt="more"
+                class="toggle-more-info rotate"
+              />
+            </div>
+            <div class="advantage-description">
+              <p>
+                Мы гордимся результатами своей работы! Мы убеждены, что именно
+                качество — это самое главное, это то, что даёт Нам уверенность в
+                завтрашнем дне.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="company-products-block">
+        <h3>ПРОДУКТЫ КОМПАНИИ</h3>
+        <div class="sauna-or-house-block">
+          <div class="select-one"><p>БАНИ</p></div>
+          <div class="select-one"><p>ДОМА</p></div>
+        </div>
+        <div class="swiper-container swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+          <div class="swiper-pagination pagi1"></div>
+          <div class="swiper-button-next next1"></div>
+          <div class="swiper-button-prev prev1"></div>
+        </div>
+      </div>
+      <div class="carier-growth-slider">
+        <h3>КАРЬЕРНЫЙ РОСТ</h3>
+        <div class="carier-growth-paragraph">
+          <p>
+            Наша Компания является ярким примером, где достойные люди смело и
+            заслуженно поднимаются по карьерной лестнице.
+          </p>
+          <p>
+            Мы ценим стремление к развитию и предоставляем все необходимые для
+            этого условия.
+          </p>
+        </div>
+        <div class="swiper swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./Assets/Олег 1.png" alt="Олег" />
+              <h4>Олег Воробьёв</h4>
+              <p>Прораб</p>
+              <ul>
+                <li>
+                  В Компании с 2018 года. Начал с позиции плотника в
+                  строительной бригаде.
+                </li>
+                <li>
+                  В течение года работы Олег стал бригадиром и был приглашён в
+                  офис Компании на должность штатного Производителя строительных
+                  работ.
+                </li>
+                <li>
+                  На данный момент в Его подчинении находятся 9 строительных
+                  бригад. Олег вносит весомый вклад в итоговый результат
+                  Компании, а это реализация 100 объектов в год!
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <img src="./Assets/Даниил.png" alt="Даниил" />
+              <h4>Даниил Басенков</h4>
+              <p>Менеджер по снабжению</p>
+              <ul>
+                <li>
+                  В декабре 2018 года заступил на должность Менеджера отдела
+                  продаж.
+                </li>
+                <li>
+                  После 9 месяцев стабильных результатов, зарекомендовав себя
+                  как надёжный сотрудник, получил ответственную должность
+                  Логиста.
+                </li>
+                <li>
+                  Через год Даниил занял должность Специалиста службы снабжения,
+                  взяв на себя помимо закупа материала ещё и крайне важную роль
+                  Сметчика.
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <img src="./Assets/Мария.png" alt="Мария" />
+              <h4>Мария Обухова</h4>
+              <p>Руководитель финансовой службы</p>
+              <ul>
+                <li>
+                  В декабре 2018 года заступил на должность Менеджера отдела
+                  продаж.
+                </li>
+                <li>
+                  После 9 месяцев стабильных результатов, зарекомендовав себя
+                  как надёжный сотрудник, получил ответственную должность
+                  Логиста.
+                </li>
+                <li>
+                  Через год Даниил занял должность Специалиста службы снабжения,
+                  взяв на себя помимо закупа материала ещё и крайне важную роль
+                  Сметчика.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev prev2"></div>
+          <div class="swiper-button-next next2"></div>
+        </div>
+      </div>
+      <div class="join-our-team-block">
+        <div class="join-paragraph-block">
+          <p>
+            НАШИ УСПЕХИ — ЭТО ЗАСЛУГА ЗАМЕЧАТЕЛЬНЫХ ЛЮДЕЙ, РАБОТАЮЩИХ В НАШЕЙ
+            КОМАНДЕ.
+          </p>
+          <p>У НАС ВСЕГДА ЕСТЬ ВАКАНСИИ ДЛЯ СИЛЬНЫХ КАНДИДАТОВ</p>
+          <img
+            class="join-team-image"
+            src="./Assets/join-team.svg"
+            alt="team"
+          />
+          <img class="join-team-glow" src="./Assets/Блик.svg" alt="glow" />
+          <div class="join-team-button-block">
+            <p id="join-team-button-block-p">
+              Если чувствуешь в Себе потенциал и здоровые амбиции — ждём рядом с
+              Нами!
+            </p>
+            <button class="send-form-button-join-team">
+              <p id="join-team-button-block-button-text">
+                ПРИСОЕДИНИТЬСЯ К КОМАНДЕ
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <h3>КОНТАКТЫ</h3>
+        <div class="footer-cities-block">
+          <div class="one-footer-city-block"><p>САНКТ-ПЕТЕРБУРГ</p></div>
+          <div class="one-footer-city-block"><p>МОСКВА</p></div>
+        </div>
+        <div class="footer-contacts-block">
+          <div class="one-contact">
+            <img src="./Assets/phone.svg" alt="" />
+            <p>8 (812) 602-77-60</p>
+          </div>
+          <div class="one-contact">
+            <img src="./Assets/mail.svg" alt="" />
+            <p>info@pplk.ru</p>
+          </div>
+          <div class="one-contact last-p-underline">
+            <img src="./Assets/location.svg" alt="" />
+            <p>
+              ул. Заозёрная, д. 8 к. 2, офис 202 (7 мин. пешком от метро
+              Фрунзенская)
+            </p>
+          </div>
+        </div>
+        <div class="social-networks-block">
+          <img src="./Assets/youtube.svg" alt="youtube" />
+          <img src="./Assets/vk.svg" alt="vk" />
+          <img src="./Assets/telegram.svg" alt="telegram" />
+        </div>
+        <img class="map-block" src="./Assets/map.svg" alt="map" />
+        <div class="footer-last-block">
+          <p>© 2023 Пестовский Лесокомбинат.</p>
+          <p>Все права защищены.</p>
+          <p class="footer-last-underlined footer-mt">Реквизиты</p>
+          <p class="footer-last-underlined">Политика конфиденциальности</p>
+          <img
+            class="logo-footer"
+            src="./Assets/LOGO Alpha актуальный 1.svg"
+            alt="logo"
+          />
+        </div>
+      </footer>
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="close_popup_header">
+            <a href="" class="popup_close"
+              ><img onclick="closeModal()" src="./Assets/close.svg" alt="close"
+            /></a>
+          </div>
+          <h2>ЗАПОЛНИТЕ АНКЕТУ</h2>
+          <form class="form_block">
+            <div class="block_form">
+              <input id="name" type="text" placeholder="Ф.И.О" required />
+            </div>
+            <div class="block_form">
+              <input id="phone" type="text" placeholder="Телефон" required />
+            </div>
+            <p class="form_p">Отклик на вакансию</p>
+            <div class="block_form">
+              <div class="dropdown">
+                <div class="space_between_block">
+                  <button class="dropdown-toggle">
+                    <p>Выберите вакансию</p>
+                  </button>
+                  <img src="./Assets/Vector.png" alt="Vector" />
+                </div>
+                <div class="dropdown-menu">
+                  <div class="block_form">
+                    <a href="#" class="dropdown-item"><p>Прораб</p></a>
+                  </div>
+                  <div class="block_form">
+                    <a href="#" class="dropdown-item"
+                      ><p>Специалист службы снабжения</p></a
+                    >
+                  </div>
+                  <div class="block_form">
+                    <a href="#" class="dropdown-item"><p>Логист</p></a>
+                  </div>
+                  <div class="block_form">
+                    <a href="#" class="dropdown-item"><p>Проектировщик</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="form_p">Ваше резюме</p>
+            <p style="margin-left: 13px">
+              Есть резюме в формате .pdf или .doc?
+            </p>
+            <p style="margin-left: 13px">Приложите и отправьте его нам</p>
+            <input class="file_form" type="file" id="file" />
+            <label for="file"><p>ЗАГРУЗИТЬ ФАЙЛ</p></label>
+            <div class="checkbox_block">
+              <input type="checkbox" name="checkbox" />
+              <p style="margin-left: 5px">
+                Я прочитал(а), ознакомился(лась) и согласен(на) с Политикой
+                конфиденциальности, Согласием на обработку персональных данных
+                физическим лицом. Я осознаю, что даю Согласие на обработку
+                персональных данных для использования предоставляемых
+                возможностей Веб-сервиса. <br /><br />Я достиг(ла) 18-летнего
+                возраста
+              </p>
+            </div>
+            <div class="button-center">
+              <button
+                onclick="сloseModal_OpenOther()"
+                class="send-form-button-popup"
+              >
+                <p>ОТПРАВИТЬ АНКЕТУ</p>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="popup2" class="popup2">
+      <div class="popup_body2">
+        <div class="popup_content2">
+          <div class="close_popup_header2">
+            <a href="" class="popup_close"
+              ><img
+                src="./Assets/close.svg"
+                alt="close"
+                onclick="closeModal2()"
+            /></a>
+          </div>
+          <h2>АНКЕТА ОТПРАВЛЕНА</h2>
+          <img src="./Assets/Vector.svg" alt="успех" />
+          <p>
+            Благодарим за ваш отклик и интерес. <br /><br /><br />Мы изучим вашу
+            анкету <br />и свяжемся с вами в течении 2х дней.
+          </p>
+          <button class="send-form-button-popup2" onclick="closeModal2()">
+            <p>НА ГЛАВНУЮ</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
